@@ -1,23 +1,17 @@
 # ionic
 
-Start up: ionic create {name} {blank/tabs/super}
-To preview: ionic serve
+# Get started!
 
--- To Deploy --
-iOS: 
-   Development Build: Use xCode
-   Stable Build (Release): Use xCode
+  - Start up: ionic create {name} {blank/tabs/super}
+  - Preview: ionic serve
+ -------
+Deployment:
+  # iOS
+  - ## Use xCode
+  ----------
+  # Android 
+  - ## Development Build: ionic cordova build android --prod
+  - ## Release Build: ionic cordova build android --prod --release
+  --------
 
-Android:
-   Development Build: ionic cordova build android --prod
-   Stable (Release)(Might need to have it Signed): ionic cordova build android --prod --release
-
-   Export Directory: `platforms\android\app\build\outputs\apk\debug`
-
--- Sign APK -- (Only if wanna release to Google Play)
-   Command: 
-	- keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 100          00 -alias my-alias
-
-
--- Once Exported --
-Enjoy your Ionic App!
+# Export your App, and enjoy!
